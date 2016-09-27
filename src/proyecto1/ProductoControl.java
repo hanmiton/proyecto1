@@ -11,7 +11,7 @@ public class ProductoControl {
 		
 		try{
 			Statement st = conex.getConnection().createStatement();
-			String sql = "INSERT INTO producto (pro_nombe, pro_precio) VALUES ('"+p.getNombre()+"', " + p.getPrecio() + ")";
+			String sql = "INSERT INTO ingeniero (pro_nombre, pro_precio) VALUES ('"+p.getNombre()+"', " + p.getPrecio() + ")";
 			st.executeUpdate(sql);
 			st.close();
 			conex.desconectar();
